@@ -19,16 +19,16 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto" >
       <li class="nav-item ">
-        <a class="nav-link" href="#">HOME </a>
+        <a class="nav-link" href="#">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">OUR COURSES</a>
+        <a class="nav-link" href="#">Our Courses</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT US</a>
+        <a class="nav-link" href="#">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#" >CONTACT</a>
+        <a class="nav-link " href="#" >Contact</a>
       </li>
 	  <li class="nav-item">
         <a class="nav-link " href="signUp/signup.php" >SignIn/SignUp</a>
