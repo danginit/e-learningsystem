@@ -1,3 +1,7 @@
+<?php
+
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,7 +70,7 @@ include 'db_connect.php';
 ?>
 
 
-<form action="" method="POST" style="border:1px solid #ccc; margin-left: 400px; margin-right: 400px;">
+<form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST" style="border:1px solid #ccc; margin-left: 400px; margin-right: 400px;">
   <div class="container">
     <h1 style="text-align: center;">Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
@@ -93,6 +97,9 @@ include 'db_connect.php';
       <button type="button" class="cancelbtn" name="cancel">Cancel</button>
       <button type="submit" class="signupbtn" name="submit">Sign Up</button>
     </div>
+	<div>
+		<p>Have an account? <a href="login.php">Login</a><p>
+	</div>
   </div>
 </form>
 </body>
