@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +13,47 @@
 </head>
 <body>
 
+<?php
+
+include 'db_connect.php';
+
+if(isset($_POST['submit']))
+{
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+	
+	$email_search = "select * from registration where email='$email'";
+	$query = mysqli_query($con,$email_search);
+	$email_count = mysqli_num_rows($query);
+	
+	if($email_count)
+	{ 
+		$email_pass = mysqli_fetch_assoc($query);
+		$db_pass = $email_pass['password'];
+		
+		$pass_decode = password_verify($password, $db_pass);
+		
+		if($pass_decode)
+		{
+			echo "Login Successful";
+			
+		}
+		else
+		{
+			echo "Password Incorrect";
+		}
+	}
+	else
+	{
+		echo "Invalid Email";
+	}
+}
+
+?>
 
 
 <div class="container" style="margin-left: 250px; margin-right: 250px; margin-top: 100px;">
-  <form action="/action_page.php" style="margin-left: 50px; margin-right: 50px;">
+  <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST" style="margin-left: 50px; margin-right: 50px;">
     <div class="row">
       <h2 style="text-align:center">Sign In</h2>
       <div class="vl">
@@ -33,7 +76,7 @@
 
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login">
+        <input type="submit" name="submit"  value="Login">
       </div>
       
     </div>
