@@ -72,20 +72,20 @@ include 'db_connect.php';
     <p>Please fill in this form to create an account.</p>
     <hr>
 	
-	<label for="name" name="username"><b>Full Name</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+	<label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="username" required>
 	
-    <label for="email" name="email"><b>Email</b></label>
+    <label for="email" ><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
-    <label for="mobile" name="mobile"><b>Mobile No.</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="mobile" ><b>Mobile No.</b></label>
+    <input type="text" placeholder="Enter Mobile no." name="mobile" required>
 	
-	<label for="psw" name="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+	<label for="psw" ><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
 
-    <label for="psw-repeat" name="cfmpassword"><b>Conform Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="psw-repeat" ><b>Conform Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="cfmpassword" required>
     
     
 
