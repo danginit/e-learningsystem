@@ -31,12 +31,17 @@ if(isset($_POST['submit']))
 		$email_pass = mysqli_fetch_assoc($query);
 		$db_pass = $email_pass['password'];
 		
+		$_SESSION['username'] = $email_pass['username'];
 		$pass_decode = password_verify($password, $db_pass);
 		
 		if($pass_decode)
 		{
 			echo "Login Successful";
-			header('location: home.php');
+			?>
+			<script>
+				location.replace("home1.php");
+			</script>
+			<?php 
 		}
 		else
 		{
