@@ -1,187 +1,71 @@
-*{
-	margin: 0;
-	padding: 0;
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  /*display: inline-block;*/
+  border: none;
+  background: #f1f1f1;
 }
 
-body
-{
-	font-family: sans-sarif;
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
-#nav-bar
-{
-	position: sticky;
-	top: 0;
-	z-index: 10;
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
 }
 
-.navbar
-{
-	background-image: linear-gradient(to right,#a517ba,#5f1782);
-	padding: 0 !important;
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-.navbar-brand img
-{
-	height: 40px;
-	padding-left: 20px;
+button:hover {
+  opacity:1;
 }
 
-.navbar-nav li
-{
-	padding: 0 10px;
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
 }
 
-.navbar-nav li a
-{
-	color: #fff !important;
-	font-weight: 600;
-	float: right;
-	text-align: left;
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 20%;
 }
 
-.fa-bars
-{
-	color: #fff;
-	font-size: 30px !important;
+/* Add padding to container elements */
+.container {
+  padding: 16px;
 }
 
-.navbar-toggler
-{
-	outline: none !important;
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-/*-----------banner section-------------*/
-#banner
-{
-	background-image: linear-gradient(to right,#a517ba,#5f1782);
-	color: #fff;
-	padding-top: 5%;
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
 }
 
-.promo-title
-{
-	font-size: 40px;
-	font-weight: 600;
-	margin-top: 100;
-}
-.play-btn
-{
-	width: 45px;
-	margin: 20px;
-}
-
-#banner a517ba
-{
-	color: #fff;
-	text-decoration: none;
-}
-
-.img-size
-{
-	width: 50%; 
-    height: 50%; 
-}
-.bottom-img
-{
-	width: 100%;
-}
-
-
-/*---------------  courses section ------------------*/
-
-#courses
-{
-	padding: 80px 0;
-}
-
-.title
-{
-	content: '';
-	background: #7b1798;
-	height: 5px;
-	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	transform: translateY(63px);
-}
-
-.title::after
-{
-	content: '';
-	background: #7b1798;
-	height: 10px;
-	width: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom:40px;
-	display: block;
-	transform: translateY(8px);
-}
-
-#courses .btn-primary
-{
-	box-shadow: none;
-	padding: 8px 25px;
-	border: none;
-	border-radius: 20px;
-}
-
-
-/*--------------------  about-us ------------*/
-
-#about-us
-{
-	background: #f8f9fa;
-	padding-bottom: 50px;
-	padding-top: 10px;
-}
-
-.about-title
-{
-	font-size: 40px;
-	font-weight: 600;
-	margin-top: 8%;
-}
-
-/*---------------  contact ----------*/
-
-#contact
-{
-	background: #f8f9fa;
-	padding: 100px 0;
-}
-
-#contact p
-{
-	font-size: 36px;
-	font-weight: 600;
-	margin-bottom: 30px;
-}
-
-.social-icons img
-{
-	width: 60px;
-	transition: 0.5s;
-}
-
-.social-icons a:hover img
-{
-	transform: translateY(-10px);
-}
-
-
-/*--------------------- footer --------------*/
-
-#footer
-{
-	background-image: linear-gradient(to right,#a517ba,#5f1782);
-	color: #fff;
-}
-
-.footer-img
-{
-	width:100%;
-	height:50%;
-}

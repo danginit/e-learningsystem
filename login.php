@@ -1,127 +1,98 @@
-<?php 
-require_once ("include/initialize.php");   
-if (isset($_SESSION['StudentID'])) {
-  # code...
-  redirect('index.php');
-}
-?> 
-  
+<?php
 
-<style type="text/css">
-  body {
-    background-color: #fff;
-  }
-</style>
+session_start();
+?>
 
- <!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Login</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->  
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-
-<link href="<?php echo web_root; ?>css/bootstrap.min.css" rel="stylesheet"> 
-<link href="<?php echo web_root; ?>fonts/font-awesome.min.css" rel="stylesheet" media="screen">  
- 
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="<?php echo web_root; ?>css/util.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo web_root; ?>css/main.css">
-<!--===============================================================================================-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
-  
-  <div class="limiter">
-    <div class="container-login100">
-           <?php check_message(); ?>
-      <div class="wrap-login100">
-        <div class="login100-pic js-tilt" data-tilte>
-          <img src="<?php echo web_root; ?>images/janobe.png" alt="IMG">
-        </div>
-         
-        <form class="login100-form validate-form" action="" method="POST"> 
-          <span class="login100-form-title">
-            Member Login 
-          </span>
 
-          <div class="wrap-input100 validate-input" >
-            <input class="input100" type="text" name="user_email" placeholder="Username">
-            <span class="focus-input100"></span>
-            <span class="symbol-input100">
-              <i class="fa fa-user" aria-hidden="true"></i>
-            </span>
-          </div>
+<?php
 
-          <div class="wrap-input100 validate-input" data-validate = "Password is required">
-            <input class="input100" type="password" name="user_pass" placeholder="Password">
-            <span class="focus-input100"></span>
-            <span class="symbol-input100">
-              <i class="fa fa-lock" aria-hidden="true"></i>
-            </span>
-          </div>
-          
-          <div class="container-login100-form-btn">
-            <button class="login100-form-btn" type="submit" name="btnLogin">
-              Login
-            </button>
-          </div>
- 
-          <div class="text-center p-t-136">
-            <a class="txt2" href="register.php">
-              Create your Account
-              <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-            </a>
-          </div>
-        </form>
+include 'db_connect.php';
+
+if(isset($_POST['submit']))
+{
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+	
+	$email_search = "select * from registration where email='$email'";
+	$query = mysqli_query($con,$email_search);
+	$email_count = mysqli_num_rows($query);
+	
+	if($email_count)
+	{ 
+		$email_pass = mysqli_fetch_assoc($query);
+		$db_pass = $email_pass['password'];
+		
+		$pass_decode = password_verify($password, $db_pass);
+		
+		if($pass_decode)
+		{
+			echo "Login Successful";
+			header('location: home.php');
+		}
+		else
+		{
+			echo "Password Incorrect";
+		}
+	}
+	else
+	{
+		echo "Invalid Email";
+	}
+}
+
+?>
+
+
+<div class="container" style="margin-left: 250px; margin-right: 250px; margin-top: 100px;">
+  <form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST" style="margin-left: 50px; margin-right: 50px;">
+    <div class="row">
+      <h2 style="text-align:center">Sign In</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
       </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" name="submit"  value="Login">
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<!--- <div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white " class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
     </div>
   </div>
-  
-  
-
-  <?php 
-
-if(isset($_POST['btnLogin'])){
-  $email = trim($_POST['user_email']);
-  $upass  = trim($_POST['user_pass']);
-  $h_upass = sha1($upass);
-  
-   if ($email == '' OR $upass == '') {
-
-      message("Invalid Username and Password!", "error");
-      redirect (web_root."login.php");
-         
-    } else {  
-      //it creates a new objects of member
-        $student = new Student();
-        //make use of the static function, and we passed to parameters
-        $res = $student::studentAuthentication($email, $h_upass);
-        if ($res==true) {  
-             // redirect(web_root."index.php"); 
-
-          echo $_SESSION['StudentID'];
-        }else{
-          message("Account does not exist! Please contact Administrator.", "error");
-          redirect (web_root."login.php");
-        }
-   }
- } 
- ?> 
-
-<script type="text/javascript" language="javascript" src="<?php echo web_root; ?>js/jquery.js"></script>
-<script src="<?php echo web_root; ?>js/bootstrap.min.js"></script> 
-<!--===============================================================================================-->
-  <script src="<?php echo web_root; ?>vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-  <script src="<?php echo web_root; ?>vendor/tilt/tilt.jquery.min.js"></script>
-  <script >
-    $('.js-tilt').tilt({
-      scale: 1.1
-    })
-  </script>
-<!--===============================================================================================-->
-  <script src="js/main.js"></script>
+</div>  --->
 
 </body>
 </html>
