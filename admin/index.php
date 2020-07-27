@@ -41,7 +41,7 @@
 		<div class="divider"></div>
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
-			<li><a href="#########"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 
