@@ -41,6 +41,7 @@
 		<div class="divider"></div>
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<li ><a href="total_user.php"><em class="fa fa-dashboard">&nbsp;</em> Total User</a></li>
 			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
@@ -66,8 +67,29 @@
 				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
 					<div class="panel panel-teal panel-widget border-right">
 						<div class="row no-padding"><em class="fa fa-xl fa-users color-teal"></em>
-							<div class="large">120</div>
-							<div class="text-muted">Users</div>
+							<!--<div class="large">120</div>-->
+							<div class="large">
+							<?php
+
+							 $connection = mysqli_connect("localhost","root","","db_elearning");
+							 $sql = "SELECT * FROM tblstudent";
+							 $result = mysqli_prepare($connection, $sql);
+
+							 mysqli_stmt_execute($result);
+
+							 mysqli_stmt_store_result($result);
+
+							 $total_row=mysqli_stmt_num_rows($result);
+ 						 	 echo $total_row;
+
+							 mysqli_stmt_free_result($result);
+
+							 mysqli_stmt_close($result);
+
+							 mysqli_close($connection);
+							?>
+							</div>
+							<div class="text-muted">Total User</div>
 						</div>
 					</div>
 				</div>
