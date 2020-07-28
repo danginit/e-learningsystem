@@ -64,17 +64,42 @@
 
 		<div class="panel panel-container">
 			<div class="row">
-
-					<div class="panel panel-teal panel-widget border-right">
-
-							<!--<div class="large">120</div>-->
-							<div class="large">
+				<table class="table" id="dataTable" width="100%" cellspacing="0">
+		      <thread>
+		        <tr>
+		          <th>Name</th>
+		          <th>Mobile no</th>
+		        </tr>
+		      </thread>
 							<?php
-
 							 $connection = mysqli_connect("localhost","root","","db_elearning");
-							 $sql = "SELECT * FROM tblstudent";
+							 $query = "SELECT Fname,MobileNo FROM tblstudent";
 							 $query_run = mysqli_query($connection, $query);
               ?>
+
+    <tbody>
+      <?php
+      if(mysqli_num_rows($query_run)>0)
+      {
+        while($row = mysqli_fetch_assoc($query_run))
+        {
+					?>
+					<tr>
+					<td> <?php echo $row['Fname']; ?> </td>
+					<td> <?php echo $row['MobileNo']; ?> </td>
+					<tr>
+        <?php
+			   }
+      }
+			else{
+					echo 'No Record found';
+				}
+				?>
+    </tbody>
+  	</table>
+	</div>
+</div>
+</div>
 
 </body>
 </html>
