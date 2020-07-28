@@ -41,28 +41,19 @@ if (isset($_SESSION['StudentID'])) {
             <div class="card card-1">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Registration Info</h2>
-                    <form method="POST" action="register.php">
+                    <h2 class="title">Affiliate Id Generator</h2>
+                    <form method="POST" action="affiliate.php">
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Firstname" name="FNAME">
+                            <input class="input--style-1" type="text" placeholder="Enter your full name" name="name">
                         </div>
 
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Lastname" name="LNAME">
+                            <input class="input--style-1" type="text" placeholder="Enter your phone number" name="Fone_number">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Address" name="ADDRESS">
+                            <input class="input--style-1" type="email" placeholder="Enter your email Address" name="email">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="number" placeholder="Phone" name="PHONE">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Username" name="USERNAME">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-1" type="password" placeholder="Password" name="PASS">
-                        </div>
-                       
+                        
 
                       
                         <div class="p-t-20">
@@ -95,25 +86,7 @@ if (isset($_SESSION['StudentID'])) {
 
 <?php 
 
+// Check connection
 
-
-if (isset($_POST['btnRegister'])) {
-    # code...  
-    
-    $student = New Student(); 
-
-    $student->Fname         = $_POST['FNAME']; 
-    $student->Lname         = $_POST['LNAME'];
-    $student->Address       = $_POST['ADDRESS'];
-    $student->MobileNo         = $_POST['PHONE'];  
-    $student->STUDUSERNAME      = $_POST['USERNAME'];
-    $student->STUDPASS      = sha1($_POST['PASS']); 
-
-    $student->create();  
-
-    message("Your now succefully registered. You can login now!","success");
-    redirect("register.php");
-
-}
 
 ?> 
