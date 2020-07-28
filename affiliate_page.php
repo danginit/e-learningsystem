@@ -42,13 +42,13 @@ if (isset($_SESSION['StudentID'])) {
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">Affiliate Id Generator</h2>
-                    <form method="POST" action="affiliate.php">
+                    <form method="POST" action="affiliate_action.php">
                         <div class="input-group">
                             <input class="input--style-1" type="text" placeholder="Enter your full name" name="name">
                         </div>
 
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="Enter your phone number" name="Fone_number">
+                            <input class="input--style-1" type="text" placeholder="Enter your phone number" name="phone_number">
                         </div>
                         <div class="input-group">
                             <input class="input--style-1" type="email" placeholder="Enter your email Address" name="email">
@@ -84,9 +84,3 @@ if (isset($_SESSION['StudentID'])) {
 
 
 
-<?php 
-
-// Check connection
-
-
-?> 
