@@ -45,6 +45,7 @@ class Student {
 		 	$_SESSION['Lname']      	= $user_found->Lname;
 		 	$_SESSION['USERNAME'] 		= $user_found->STUDUSERNAME;
 		 	$_SESSION['STUDPASS'] 		= $user_found->STUDPASS; 
+		 
 		   return true;
 		 }else{
 		 	return false;
