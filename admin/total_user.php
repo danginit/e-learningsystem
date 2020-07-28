@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Toatl users</title>
+	<title>Total users</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
@@ -73,21 +73,8 @@
 
 							 $connection = mysqli_connect("localhost","root","","db_elearning");
 							 $sql = "SELECT * FROM tblstudent";
-							 $result = mysqli_prepare($connection, $sql);
-
-							 mysqli_stmt_execute($result);
-
-							 mysqli_stmt_store_result($result);
-
-							 $total_row=mysqli_stmt_num_rows($result);
- 						 	 echo $total_row;
-
-							 mysqli_stmt_free_result($result);
-
-							 mysqli_stmt_close($result);
-
-							 mysqli_close($connection);
-							?>
+							 $query_run = mysqli_query($connection, $query);
+              ?>
 
 </body>
 </html>
