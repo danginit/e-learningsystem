@@ -105,11 +105,10 @@
 	<ul>
 	<li>We are best online course seller for Share Market</li>
 	<li>We are best course provider</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
+	<li>We are best seller in the market</li>
+	<li>You will be become zero to hero</li>
+	<li>India is the future of share market</li>
+	<li>After this course you become king of share market.</li>
 	</ul>
 </div>
 </div>
