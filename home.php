@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['username']))
+{
+	header('location: index.php');
+}
+?>
 <html>
 	<head>
 		<title></title>
@@ -15,24 +22,34 @@
   <a class="navbar-brand" href="#"><img src=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa fa-bars" aria-hidden="true"></i>
-  </button>
+  </button> 
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto" >
+		<div class="dropdown">
+		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		<p class="dropdown-item">Welcome <?php echo $_SESSION['username'];?></a>
+		<a class="dropdown-item" href="">My Course</a>
+		<a class="dropdown-item" href="">Account setting</a>
+		<a class="dropdown-item" href="">Purchase history</a>
+		<a class="dropdown-item" href="logout.php">Logout</a>
+		</div>
+		</div>
       <li class="nav-item ">
-        <a class="nav-link" href="#">Home </a>
+        <a class="nav-link" href="#banner">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Our Courses</a>
+        <a class="nav-link" href="#courses">Our Courses</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#about-us">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#" >Contact</a>
+        <a class="nav-link " href="#contact" >Contact</a>
       </li>
-	  <li class="nav-item">
-        <a class="nav-link " href="signup.php" >SignIn/SignUp</a>
-      </li>
+	  
+		
+	 
     </ul>
   </div>
 </nav>
@@ -86,42 +103,7 @@
   </div>
 </div>
 </div>
-<div class="col-md-4">
-<div class="card" style="width: 18rem;">
- <!---- <img src="..." class="card-img-top" alt="..."> -->
- <div style="margin-top: 5px; margin-left:5px; margin-bottom:5px; margin-right:5px;">
- <video width="275" controls>
-			<source src="img/videoplayback.mp4" type="video/mp4">
-			<source src="img/videoplayback.ogg" type="video/ogg">
-			Your browser does not support HTML video.
-		</video>
-</div>
-  <div class="card-body">
-    <h5 class="card-title">Stock Exchange</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary" style="background-color:#ff3300;">Buy Now</a>
-	<a href="#" class="btn btn-primary" style="background-color:#e6b800;">Add to Cart</a>
-  </div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card" style="width: 18rem;">
- <!---- <img src="..." class="card-img-top" alt="..."> -->
- <div style="margin-top: 5px; margin-left:5px; margin-bottom:5px; margin-right:5px;">
- <video width="275" controls>
-			<source src="img/videoplayback.mp4" type="video/mp4">
-			<source src="img/videoplayback.ogg" type="video/ogg">
-			Your browser does not support HTML video.
-		</video>
-</div>
-  <div class="card-body">
-    <h5 class="card-title">Stock Exchange</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary" style="background-color:#ff3300;">Buy Now</a>
-	<a href="#" class="btn btn-primary" style="background-color:#e6b800;">Add to Cart</a>
-  </div>
-</div>
-</div>
+
 </div>
 </div>
 </section>
@@ -174,13 +156,13 @@
 <img src="img/wave2.png" class="footer-img">
 <div clas="container">
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-6" style="padding-left: 10%;">
 <img src="">
 	<p>bhsbhdbfkbh bhjvshbdf hjvjhvjvhs dfhjvvjbbjkbjksf hhjbkjbsdf hbhbibhkb
 	bjkbjkbjkbjkdf hjhuubnbjknjdf juiuihuihkldf hbbkbkhbhbdf bbbbkbjkbhdf
 	hjvhjvhjf hvvhjvjhvfd </p>
 </div>
-<div class="col-md-4">
+<div class="col-md-6" style="padding-left: 5%;">
 <img src="">
 	<p><b>CONTACT US</b></p>
 	<p>World Trade center, Flana dhikana</p>

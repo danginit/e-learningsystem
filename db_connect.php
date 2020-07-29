@@ -3,7 +3,7 @@
 $server = "localhost";
 $user = "root";
 $password = "";
-$db = "db_elearning";
+$db = "signup";
 
 $con = mysqli_connect($server,$user,$password,$db);
 

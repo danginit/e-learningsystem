@@ -39,7 +39,7 @@ if(isset($_POST['submit']))
 			echo "Login Successful";
 			?>
 			<script>
-				location.replace("home1.php");
+				location.replace("home.php");
 			</script>
 			<?php 
 		}
