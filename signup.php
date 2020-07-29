@@ -92,19 +92,22 @@ include 'db_connect.php';
 					<form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="Enter Full Name" name="username" type="text" autofocus="">
+								<input class="form-control" placeholder="Enter Full Name" name="username" type="text" autofocus="" required>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" required>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Mobile no." name="mobile" type="text" autofocus="">
+								<input class="form-control" placeholder="Mobile no." name="mobile" type="text" autofocus="" required>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Password" name="password" type="password" autofocus="">
+								<input class="form-control" placeholder="Password" name="password" type="password" autofocus="" required>
 							</div>
 							<div class="form-group">
-								<input class="form-control" placeholder="Conform Password" name="cfmpassword" type="password" value="">
+								<input class="form-control" placeholder="Conform Password" name="cfmpassword" type="password" value="" required>
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Affiliate" name="affiliate" type="text" autofocus="">
 							</div>
 							
 							<input type="submit" name="submit" class="btn btn-primary" value="Sign Up">

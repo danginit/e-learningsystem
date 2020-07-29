@@ -166,5 +166,8 @@ if(isset($_SESSION['username']))
 </div>
 </div>
 </section>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-259bdebd-20e6-4c39-a8fd-4275d70fce91"></div>
 </body>
 </html>
