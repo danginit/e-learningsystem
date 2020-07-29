@@ -7,7 +7,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style2.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 	</head>
 <body>
 <section id="nav-bar">
@@ -45,9 +45,9 @@
 <div class="row">
 <div class="col-md-6">
 <p class="promo-title">Explore Yourself</p>
-<p>kjbhjbsj jbjksbfk kjbkbkbsf jkkbkbkbbjkbsf kjbkkubkubkbfr kjjbjbkbkbkf</p>
+<p>StockUpWorld is the best website for learning Sahre Market</p>
 
-<a href="#" class="play-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>Go to the COURSE</a> 
+<a href="#" class="play-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>Go to the COURSE</a>
 </div>
 <div class="img-size">
 <img src="img/invest.png" class="img-fluid">
