@@ -50,9 +50,9 @@ if(!isset($_SESSION['username']))
   background-color: #3e8e41;
 }
 </style>
-	
-	
-	
+
+
+
 		<title></title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -60,7 +60,7 @@ if(!isset($_SESSION['username']))
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style2.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 	</head>
 <body>
 <section id="nav-bar">
@@ -68,18 +68,18 @@ if(!isset($_SESSION['username']))
   <a class="navbar-brand" href="#"><img src=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fa fa-bars" aria-hidden="true"></i>
-  </button> 
+  </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto" >
-		<div class="dropdown">
+		<!--<div class="dropdown">
 			<button class="dropbtn">Dropdown</button>
 				<div class="dropdown-content">
 					<a href="#">Link 1</a>
 					<a href="#">Link 2</a>
 					<a href="#">Link 3</a>
 				</div>
-			</div>
-		<!--<div class="dropdown">
+			</div>-->
+		<div class="dropdown">
 		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</button>
 		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		<p class="dropdown-item">Welcome <?php echo $_SESSION['username'];?></a>
@@ -88,7 +88,7 @@ if(!isset($_SESSION['username']))
 		<a class="dropdown-item" href="">Purchase history</a>
 		<a class="dropdown-item" href="logout.php">Logout</a>
 		</div>
-		</div> -->
+		</div>
       <li class="nav-item ">
         <a class="nav-link" href="#banner">Home </a>
       </li>
@@ -101,9 +101,9 @@ if(!isset($_SESSION['username']))
       <li class="nav-item">
         <a class="nav-link " href="#contact" >Contact</a>
       </li>
-	  
-		
-	 
+
+
+
     </ul>
   </div>
 </nav>
@@ -118,7 +118,7 @@ if(!isset($_SESSION['username']))
 <p class="promo-title">Explore Yourself</p>
 <p>kjbhjbsj jbjksbfk kjbkbkbsf jkkbkbkbbjkbsf kjbkkubkubkbfr kjjbjbkbkbkf</p>
 
-<a href="#" class="play-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>Go to the COURSE</a> 
+<a href="#" class="play-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>Go to the COURSE</a>
 </div>
 <div class="img-size">
 <img src="img/invest.png" class="img-fluid">
