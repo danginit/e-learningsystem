@@ -1,12 +1,9 @@
-<?php  
-require_once ("include/initialize.php"); 
-if (isset($_SESSION['StudentID'])) {
-  # code...
-  redirect('index.php');
-}
+<?php
+require_once ("include/initialize.php");
+if (isset($_SESSION['StudentID']))
 ?>
 
- 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,9 +50,9 @@ if (isset($_SESSION['StudentID'])) {
                         <div class="input-group">
                             <input class="input--style-1" type="email" placeholder="Enter your email Address" name="email">
                         </div>
-                        
 
-                      
+
+
                         <div class="p-t-20">
                             <button class="btn btn--radius btn--green" type="submit" name="btnRegister">Submit</button>
                             <a href="login.php">Back to Login</a>
@@ -84,9 +81,9 @@ if (isset($_SESSION['StudentID'])) {
 
 
 
-<?php 
+<?php
 
 // Check connection
 
 
-?> 
+?>
