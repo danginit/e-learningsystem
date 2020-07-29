@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $servername = "localhost";
 $username = "root";
@@ -16,7 +16,7 @@ if (!$conn) {
 }
 
 
-    $name =  $_REQUEST['name'];
+  $name =  $_REQUEST['name'];
 	$phone_number =  $_REQUEST['phone_number'];
 	$email =  $_REQUEST['email'];
 
@@ -26,7 +26,7 @@ if (!$conn) {
 }
 
 	$refer_value = unique_code(8);
-	
+
 	$refer_id = strval($refer_value);
 
 
@@ -43,11 +43,11 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
-  
-    
+
+
 
 }
 
 
 
-?> 
+?>
