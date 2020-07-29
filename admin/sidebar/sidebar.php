@@ -40,11 +40,10 @@
 		</div>
 		<div class="divider"></div>
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
+			<li class="active"><a href=""><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
 			<li ><a href="total_user.php"><em class="fa fa-dashboard">&nbsp;</em> Total User</a></li>
-			<li ><a href="my_cart.php"><em class="fa fa-dashboard">&nbsp;</em>My Cart</a></li>
 			<li ><a href="affliate.php"><em class="fa fa-dashboard">&nbsp;</em> Affliate</a></li>
-			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<li><a href="index.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
 </body>
