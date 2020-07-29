@@ -9,6 +9,50 @@ if(!isset($_SESSION['username']))
 ?>
 <html>
 	<head>
+	<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+	
+	
+	
 		<title></title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -28,6 +72,14 @@ if(!isset($_SESSION['username']))
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto" >
 		<div class="dropdown">
+			<button class="dropbtn">Dropdown</button>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			</div>
+		<!--<div class="dropdown">
 		<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</button>
 		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		<p class="dropdown-item">Welcome <?php echo $_SESSION['username'];?></a>
@@ -36,7 +88,7 @@ if(!isset($_SESSION['username']))
 		<a class="dropdown-item" href="">Purchase history</a>
 		<a class="dropdown-item" href="logout.php">Logout</a>
 		</div>
-		</div>
+		</div> -->
       <li class="nav-item ">
         <a class="nav-link" href="#banner">Home </a>
       </li>
