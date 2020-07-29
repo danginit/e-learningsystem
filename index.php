@@ -1,14 +1,3 @@
-
-<?php
-session_start();
-if(isset($_SESSION['username']))
-{
-	header('location: home.php');
-}
-
-
-?>
-
 <html>
 	<head>
 		<title></title>
@@ -18,7 +7,7 @@ if(isset($_SESSION['username']))
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style2.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 	</head>
 <body>
 <section id="nav-bar">
@@ -56,9 +45,9 @@ if(isset($_SESSION['username']))
 <div class="row">
 <div class="col-md-6">
 <p class="promo-title">Explore Yourself</p>
-<p>kjbhjbsj jbjksbfk kjbkbkbsf jkkbkbkbbjkbsf kjbkkubkubkbfr kjjbjbkbkbkf</p>
+<p>StockUpWorld is the best website for learning Sahre Market</p>
 
-<a href="#" class="play-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>Go to the COURSE</a> 
+<a href="#" class="play-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i>Go to the COURSE</a>
 </div>
 <div class="img-size">
 <img src="img/invest.png" class="img-fluid">
@@ -93,7 +82,7 @@ if(isset($_SESSION['username']))
     <h5 class="card-title">Stock Exchange</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary" style="background-color:#ff3300;">Buy Now</a>
-	<a href="#" class="btn btn-primary" style="background-color:#e6b800;">Add to Cart</a>
+	<!--<a href="#" class="btn btn-primary" style="background-color:#e6b800;">Add to Cart</a>-->
   </div>
 </div>
 </div>
@@ -114,13 +103,12 @@ if(isset($_SESSION['username']))
 <div class="col-md-6">
 <p class="about-title">Why we're different</p>
 	<ul>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
+	<li>We are best online course seller for Share Market</li>
+	<li>We are best course provider</li>
+	<li>We are best seller in the market</li>
+	<li>You will be become zero to hero</li>
+	<li>India is the future of share market</li>
+	<li>After this course you become king of share market.</li>
 	</ul>
 </div>
 </div>
@@ -135,7 +123,6 @@ if(isset($_SESSION['username']))
 <p>Find us on Social Media</p>
 	<div class="social-icons">
 	<a href="#"><img src="img/facebook.png"></a>
-	<a href="#"><img src="img/google-plus.png"></a>
 	<a href="#"><img src="img/instagram.png"></a>
 	<a href="#"><img src="img/linkedin.png"></a>
 	<a href="#"><img src="img/whatsapp.png"></a>
@@ -152,14 +139,12 @@ if(isset($_SESSION['username']))
 <div class="row">
 <div class="col-md-6" style="padding-left: 10%;">
 <img src="">
-	<p>bhsbhdbfkbh bhjvshbdf hjvjhvjvhs dfhjvvjbbjkbjksf hhjbkjbsdf hbhbibhkb
-	bjkbjkbjkbjkdf hjhuubnbjknjdf juiuihuihkldf hbbkbkhbhbdf bbbbkbjkbhdf
-	hjvhjvhjf hvvhjvjhvfd </p>
+	<p>We are best learning provider in market. U can whatsapp us for more query.</p>
 </div>
 <div class="col-md-6" style="padding-left: 5%;">
 <img src="">
 	<p><b>CONTACT US</b></p>
-	<p>World Trade center, Flana dhikana</p>
+	<p>Boring Road</p>
 	<p>+91 9876543210</p>
 	<p>xyz@gmail.com</p>
 </div>

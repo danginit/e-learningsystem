@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lumia - Multipurpose responsive bootstrap website template</title>
+  <title>StockUpWorld</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -24,12 +24,6 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo web_root;?>plugins/homepage/assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="<?php echo web_root;?>plugins/homepage/assets/ico/apple-touch-icon-57-precomposed.png">
 
-  <!-- =======================================================
-    Theme Name: Lumia
-    Theme URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 
@@ -62,7 +56,7 @@
                   </li>
                   <li>
                     <a href="<?php echo web_root; ?>index.php?q=download"><i class="icon-download"></i> Downloads</a>
-                  </li> 
+                  </li>
                   <li>
                     <a href="logout.php"><i class="icon-logout"></i> Logout</a>
                   </li>
@@ -77,10 +71,10 @@
     </header>
 
     <section id="maincontent">
-      <div class="container"> 
-<?php check_message(); ?>  
-    <?php require_once $content; ?> 
-  </div>   
+      <div class="container">
+<?php check_message(); ?>
+    <?php require_once $content; ?>
+  </div>
 </section>
  <script src="<?php echo web_root;?>plugins/homepage/assets/js/jquery.js"></script>
   <script src="<?php echo web_root;?>plugins/homepage/assets/js/raphael-min.js"></script>
