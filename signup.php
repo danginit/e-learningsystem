@@ -1,15 +1,28 @@
 <?php
-
 session_start();
+if(isset($_SESSION['username']))
+{
+	header('location: home.php');
+}
+
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SignUp</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>signup</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link href="css/styles4.css" rel="stylesheet">
 </head>
 <body>
+
+
 
 <?php
 
@@ -51,6 +64,7 @@ include 'db_connect.php';
 							alert("Inserted Successful");
 						</script>
 					<?php
+					header('location: login.php');
 				}else
 				{
 					
@@ -70,38 +84,42 @@ include 'db_connect.php';
 
 ?>
 
-
-<form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST" style="border:1px solid #ccc; margin-left: 400px; margin-right: 400px;">
-  <div class="container">
-    <h1 style="text-align: center;">Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<div class="login-panel panel panel-default">
+				<div class="panel-heading">Log in</div>
+				<div class="panel-body">
+					<form action="<?php echo htmlentities($_SERVER['PHP_SELF']);?>" method="POST">
+						<fieldset>
+							<div class="form-group">
+								<input class="form-control" placeholder="Enter Full Name" name="username" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Mobile no." name="mobile" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Password" name="password" type="password" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Conform Password" name="cfmpassword" type="password" value="">
+							</div>
+							
+							<input type="submit" name="submit" class="btn btn-primary" value="Sign Up">
+							<div>
+								<p>Have an account? <a href="login.php">Login</a><p>
+							</div>
+							<!--<a type="submit" name="submit" class="btn btn-primary">Login</a>--></fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /.col-->
+	</div><!-- /.row -->	
 	
-	<label for="name"><b>Full Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="username" required>
-	
-    <label for="email" ><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
 
-    <label for="mobile" ><b>Mobile No.</b></label>
-    <input type="text" placeholder="Enter Mobile no." name="mobile" required>
-	
-	<label for="psw" ><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
-
-    <label for="psw-repeat" ><b>Conform Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="cfmpassword" required>
-    
-    
-
-    <div class="clearfix">
-      <button type="button" class="cancelbtn" name="cancel">Cancel</button>
-      <button type="submit" class="signupbtn" name="submit">Sign Up</button>
-    </div>
-	<div>
-		<p>Have an account? <a href="login.php">Login</a><p>
-	</div>
-  </div>
-</form>
+<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
