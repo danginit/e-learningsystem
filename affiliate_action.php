@@ -19,8 +19,15 @@ if (!$conn) {
     $name =  $_REQUEST['name'];
 	$phone_number =  $_REQUEST['phone_number'];
 	$email =  $_REQUEST['email'];
-	$refer_id = '998877';
-    
+
+/*		function unique_code($limit)
+{
+  return substr(base_convert(sha1(uniqid(mt_rand())), 16, 36), 0, $limit);
+}
+*/
+	$refer_id = 77;
+
+
 
 $sql = "INSERT INTO affiliate_id ( name, phone_number, email , refer_id )
 VALUES ( '$name', '$phone_number', '$email' , $refer_id )";
