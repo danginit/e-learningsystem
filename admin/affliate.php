@@ -20,7 +20,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="#"><span>StockUpWorld </span>TOTAL USER</a>
+				<a class="navbar-brand" href="#"><span>StockUpWorld </span>Affliate</a>
 				<ul class="nav navbar-top-links navbar-right">
 
 							</li>
@@ -42,8 +42,8 @@
 		<ul class="nav menu">
 			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em> Dashboard</a></li>
 			<li ><a href="total_user.php"><em class="fa fa-dashboard">&nbsp;</em> Total User</a></li>
-			<li ><a href="affliate.php"><em class="fa fa-dashboard">&nbsp;</em> Affliate</a></li>
-			<li ><a href="affliate.php"><em class="fa fa-dashboard">&nbsp;</em> Affliate</a></li>
+			<li ><a href="affliate.php"><em class="fa fa-dashboard">&nbsp;</em> Affliate</a></li>      
+      <li ><a href="affliate.php"><em class="fa fa-dashboard">&nbsp;</em> Affliate</a></li>
 			<li><a href="login.php"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
 		</ul>
 	</div><!--/.sidebar-->
@@ -76,9 +76,9 @@
 		        </tr>
 		      </thread>
 							<?php
-							 $connection = mysqli_connect("localhost","root","","db_elearning");
-							 $query = "SELECT Fname,MobileNo FROM tblstudent";
-							 $query_run = mysqli_query($connection, $query);
+							 #$connection = mysqli_connect("localhost","root","","db_elearning");
+							 #$query = ##### FROM tblstudent";
+							 #$query_run = mysqli_query($connection, $query);
               ?>
 
     <tbody>
@@ -88,9 +88,9 @@
         while($row = mysqli_fetch_assoc($query_run))
         {
 					?>
-					<tr>
-						<td> <?php echo $row['Fname']; ?></td>
-						<td> <?php echo $row['MobileNo']; ?></td>
+				 <!--<tr>
+						<td> <?php #echo $row['Fname']; ?></td>
+						<td> <?php #echo $row['MobileNo']; ?></td>
 						<td>
 									<button type = "submit" class="btn btn-success">Edit</button>
 						</td>
