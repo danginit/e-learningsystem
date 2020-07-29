@@ -1,14 +1,3 @@
-
-<?php
-session_start();
-if(isset($_SESSION['username']))
-{
-	header('location: home.php');
-}
-
-
-?>
-
 <html>
 	<head>
 		<title></title>
@@ -114,8 +103,8 @@ if(isset($_SESSION['username']))
 <div class="col-md-6">
 <p class="about-title">Why we're different</p>
 	<ul>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
-	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
+	<li>We are best online course seller for Share Market</li>
+	<li>We are best course provider</li>
 	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
 	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
 	<li>Belive in hbhbd bhkbkb sfbkbkbhbsdf hbkbkksjj</li>
