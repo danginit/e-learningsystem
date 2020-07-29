@@ -14,7 +14,7 @@ require_once("../include/initialize.php");
   <title>Login V14</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
   <link rel="icon" type="image/png" href="<?php echo web_root;?>plugins/adminlogin/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/vendor/bootstrap/css/bootstrap.min.css">
@@ -24,13 +24,13 @@ require_once("../include/initialize.php");
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/vendor/animate/animate.css">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/vendor/select2/select2.min.css">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="<?php echo web_root;?>plugins/adminlogin/css/util.css">
@@ -38,7 +38,7 @@ require_once("../include/initialize.php");
 <!--===============================================================================================-->
 </head>
 <body>
-  
+
   <div class="limiter">
     <div class="container-login100">
       <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
@@ -54,7 +54,7 @@ require_once("../include/initialize.php");
             <input class="input100" type="text" name="user_email" >
             <span class="focus-input100"></span>
           </div>
-          
+
           <span class="txt1 p-b-11">
             Password
           </span>
@@ -65,7 +65,7 @@ require_once("../include/initialize.php");
             <input class="input100" type="password" name="user_pass" >
             <span class="focus-input100"></span>
           </div>
-          
+
           <div class="flex-sb-m w-full p-b-48">
             <div class="contact100-form-checkbox">
               <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
@@ -91,10 +91,10 @@ require_once("../include/initialize.php");
       </div>
     </div>
   </div>
-  
+
 
   <div id="dropDownSelect1"></div>
-  
+
 <!--===============================================================================================-->
   <script src="<?php echo web_root;?>plugins/adminlogin/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -114,7 +114,7 @@ require_once("../include/initialize.php");
 
 </body>
 </html>
- 
+
 <?php
 
 if(isset($_POST['btnLogin'])){
@@ -145,4 +145,4 @@ if(isset($_POST['btnLogin'])){
     }
  }
  }
- ?> 
+ ?>
