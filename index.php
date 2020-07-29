@@ -82,7 +82,7 @@
     <h5 class="card-title">Stock Exchange</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-primary" style="background-color:#ff3300;">Buy Now</a>
-	<a href="#" class="btn btn-primary" style="background-color:#e6b800;">Add to Cart</a>
+	<!--<a href="#" class="btn btn-primary" style="background-color:#e6b800;">Add to Cart</a>-->
   </div>
 </div>
 </div>
@@ -123,7 +123,6 @@
 <p>Find us on Social Media</p>
 	<div class="social-icons">
 	<a href="#"><img src="img/facebook.png"></a>
-	<a href="#"><img src="img/google-plus.png"></a>
 	<a href="#"><img src="img/instagram.png"></a>
 	<a href="#"><img src="img/linkedin.png"></a>
 	<a href="#"><img src="img/whatsapp.png"></a>
@@ -140,14 +139,12 @@
 <div class="row">
 <div class="col-md-6" style="padding-left: 10%;">
 <img src="">
-	<p>bhsbhdbfkbh bhjvshbdf hjvjhvjvhs dfhjvvjbbjkbjksf hhjbkjbsdf hbhbibhkb
-	bjkbjkbjkbjkdf hjhuubnbjknjdf juiuihuihkldf hbbkbkhbhbdf bbbbkbjkbhdf
-	hjvhjvhjf hvvhjvjhvfd </p>
+	<p>We are best learning provider in market. U can whatsapp us for more query.</p>
 </div>
 <div class="col-md-6" style="padding-left: 5%;">
 <img src="">
 	<p><b>CONTACT US</b></p>
-	<p>World Trade center, Flana dhikana</p>
+	<p>Boring Road</p>
 	<p>+91 9876543210</p>
 	<p>xyz@gmail.com</p>
 </div>
