@@ -7,7 +7,7 @@ $db = "signup";
 
 $con = mysqli_connect($server,$user,$password,$db);
 
-if($con)
+/*if($con)
 {
 	?>
 		<script>
@@ -20,6 +20,6 @@ if($con)
 			alert("Connection not Successful");
 		</script>
 	<?php
-}
+//}*/
 
 ?>

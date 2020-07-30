@@ -3,7 +3,9 @@ body {
   padding-top: 60px;
   font-size: 14px;
   color: #444444;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+}
 
 p {
   color: #777; }
