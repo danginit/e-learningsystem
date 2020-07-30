@@ -1,7 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
-	
+
 }
 
 body
@@ -58,7 +58,7 @@ body
 #banner
 {
 	background-image: linear-gradient(to right,#a517ba,#5f1782);
-	color: #fff;
+	color: #448;
 	padding-top: 5%;
 }
 
@@ -74,7 +74,7 @@ body
 	margin: 20px;
 }
 
-#banner a517ba
+#banner
 {
 	color: #fff;
 	text-decoration: none;
@@ -82,8 +82,8 @@ body
 
 .img-size
 {
-	width: 50%; 
-    height: 50%; 
+	width: 50%;
+    height: 50%;
 }
 .bottom-img
 {
@@ -188,5 +188,3 @@ body
 	width:100%;
 	height:50%;
 }
-
-
