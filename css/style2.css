@@ -20,7 +20,7 @@ body
 
 .navbar
 {
-	background-image: linear-gradient(to right,#448EFA ,#448EFA );
+	background-image: linear-gradient(to right,#a517ba,#5f1782);
 	padding: 0 !important;
 }
 
@@ -57,8 +57,8 @@ body
 /*-----------banner section-------------*/
 #banner
 {
-	background-image: linear-gradient(to right,#448EFA ,#448EFA );
-	color: #448EFA ;
+	background-image: linear-gradient(to right,#a517ba,#5f1782);
+	color: #fff;
 	padding-top: 5%;
 }
 
@@ -74,9 +74,9 @@ body
 	margin: 20px;
 }
 
-#banner
+#banner a517ba
 {
-	color: #448EFA ;
+	color: #fff;
 	text-decoration: none;
 }
 
